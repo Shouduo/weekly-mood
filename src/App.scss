@@ -38,6 +38,19 @@
 // }
 
 $color-while: #ffffff;
+$color-neutral-1: #F2F2F2;
+$color-neutral-2: #929292;
+$color-neutral-3: #2D2F33;
+$color-orange-1: #FFCC4A;
+$color-orange-2: #FFA14A;
+$color-orange-3: #FF823C;
+$color-green-1: #A1FD44;
+$color-green-2: #42F373;
+$color-green-3: #52C873;
+$color-blue-1: #52E0FF;
+$color-blue-2: #5CC4FF;
+$color-blue-3: #299BE1;
+$color-gray-1: #CFCFCF;
 
 * {
   margin: 0;
@@ -52,7 +65,7 @@ body {
   font-weight: 500;
   line-height: 1.4;
   font-style: normal;
-  color: #2D2F33;
+  color: $color-neutral-3;
 }
 
 @font-face {
@@ -90,6 +103,36 @@ body {
   }
 }
 
+// :export {
+//   ColorWhite: $color-while;
+//   ColorNeutral1: $color-neutral-1;
+//   ColorNeutral2: $color-neutral-2;
+//   ColorNeutral3: $color-neutral-3;
+//   ColorOrange1: $color-orange-1;
+//   ColorOrange2: $color-orange-2;
+//   ColorOrange3: $color-orange-3;
+//   ColorGreen1: $color-green-1;
+//   ColorGreen2: $color-green-2;
+//   ColorGreen3: $color-green-3;
+//   ColorBlue1: $color-blue-1;
+//   ColorBlue2: $color-blue-2;
+//   ColorBlue3: $color-blue-3;
+//   ColorGray1: $color-gray-1;
+// }
+
 :export {
   ColorWhite: $color-while;
+  ColorNeutral1: $color-neutral-1;
+  ColorNeutral2: $color-neutral-2;
+  ColorNeutral3: $color-neutral-3;
+  ColorOrange1: $color-orange-1;
+  ColorOrange2: $color-orange-2;
+  ColorOrange3: $color-orange-3;
+  ColorGreen1: $color-green-1;
+  ColorGreen2: $color-green-2;
+  ColorGreen3: $color-green-3;
+  ColorBlue1: $color-blue-1;
+  ColorBlue2: $color-blue-2;
+  ColorBlue3: $color-blue-3;
+  ColorGray1: $color-gray-1;
 }

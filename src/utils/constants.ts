@@ -3,6 +3,7 @@ import IconMoodBad from '@/assets/svg/icon_mood_bad.svg';
 import IconMoodGood from '@/assets/svg/icon_mood_good.svg';
 import IconMoodExcellent from '@/assets/svg/icon_mood_excellent.svg';
 import userAvatar from '@/assets/img/avatar_li_qiang.png';
+import Colors from '@/App.scss';
 
 //
 export type MoodType = {
@@ -15,7 +16,7 @@ export type MoodType = {
 export type MoodStatusType = {
   scoreRange: number[];
   icon: string;
-  color: string;
+  colors: string[];
 }
 
 //
@@ -33,21 +34,21 @@ export const MOOD_STATUS : {[key: string]: MoodStatusType}= {
   MOOD_UNKNOWN: {
     scoreRange: [0, 0],
     icon: IconMoodUnknown,
-    color: '#CFCFCF'
+    colors: [Colors.ColorGray1]
   },
   MOOD_BAD: {
     scoreRange: [1, 79],
     icon: IconMoodBad,
-    color: '#299BE1'
+    colors: [Colors.ColorBlue1, Colors.ColorBlue2, Colors.ColorBlue3]
   },
   MOOD_GOOD: {
     scoreRange: [80, 89],
     icon: IconMoodGood,
-    color: '#52C873'
+    colors: [Colors.ColorGreen1, Colors.ColorGreen2, Colors.ColorGreen3]
   },
   MOOD_EXCELLENT: {
     scoreRange: [90, 100],
     icon: IconMoodExcellent,
-    color: '#FF823C'
+    colors: [Colors.ColorOrange1, Colors.ColorOrange2, Colors.ColorOrange3]
   },
 }

@@ -27,7 +27,6 @@ const MoodView = () => {
         <p className='moodview-header-title'>历史心情指数</p>
       </div>
       <div className='moodview-content'>
-        {/* {Array(20).fill(0).map(() => <div>hahahah</div>)} */}
         <MoodOverview userName={USER_TEMPLATE.name} userAvatar={USER_TEMPLATE.avatar} moodList={moodList}/>
         <MoodChart moodList={moodList}/>
       </div>

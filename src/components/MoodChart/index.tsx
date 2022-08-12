@@ -38,11 +38,11 @@ const MoodBar = ({index, timestamp, score, isSelected, onSelect} : MoodBarProps)
         <div 
           className='moodbar-bar-progress'
           style={{
-            // background: isSelected 
-            //   ? `linear-gradient(180deg, ${MOOD_STATUS[mood].color} 0%, ${MOOD_STATUS[mood].color}99 100%)`
-            //   : `linear-gradient(180deg, ${MOOD_STATUS[mood].color} 0%, ${MOOD_STATUS[mood].color} 100%)`,
-            background: MOOD_STATUS[mood].color,
-            outlineColor: `${MOOD_STATUS[mood].color}33`,
+            background: isSelected 
+              ? `linear-gradient(180deg, ${MOOD_STATUS[mood].colors[1]} 45%, ${MOOD_STATUS[mood].colors[0]} 100%)`
+              : `linear-gradient(180deg, ${MOOD_STATUS[mood].colors[2]} 45%, ${MOOD_STATUS[mood].colors[2]} 100%)`,
+            // background: MOOD_STATUS[mood].color,
+            outlineColor: `${MOOD_STATUS[mood].colors[2]}33`,
             height: `calc(${score/100} * (100% - 8.7rem) + 8.7rem)`
           }}
         >
@@ -53,7 +53,7 @@ const MoodBar = ({index, timestamp, score, isSelected, onSelect} : MoodBarProps)
       <div className='moodbar-day'>
         <p
           className='moodbar-day-text'
-          style={(isSelected && !isToday) ? {color: MOOD_STATUS[mood].color} : {}}
+          style={(isSelected && !isToday) ? {color: MOOD_STATUS[mood].colors[2]} : {}}
         >
           {WEEKDAYS[new Date(timestamp).getDay()]}
         </p>

@@ -6,6 +6,10 @@
   justify-content: flex-start;
   align-items: center;
   padding: 3.4rem;
+  padding-bottom: 0.7rem;
+  border-top-left-radius: 2.4rem;
+  border-top-right-radius: 2.4rem;
+  box-shadow: 0 -1.2rem 1.6rem -0.8rem rgba(0, 0, 0, 0.15);
   animation: fade-in 0.8s ease-in-out forwards;
 
   .moodoverview-user {
@@ -43,7 +47,7 @@
 
     .moodoverview-info-caption {
       font-size: 1.8rem;
-      color: #929292;
+      color: $color-neutral-2;
     }
   }
 }
