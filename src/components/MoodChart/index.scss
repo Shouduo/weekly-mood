@@ -1,0 +1,142 @@
+@import '@/App.scss';
+
+.moodbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  transition: all ease-in-out 0.2s;
+
+  .moodbar-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    position: relative;
+    flex-grow: 1;
+    height: 0;
+    transition: inherit;
+    animation-delay: inherit;
+
+    .moodbar-bar-progress {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.4rem;
+      width: 4.4rem;
+      background-color: #CFCFCF;
+      border-radius: 999px;
+      transform-origin: 50% calc(100% - 12rem);
+      // transition: all ease-in-out 0.2s;
+      transition: inherit;
+      animation: fade-in 0.2s ease-in-out backwards, grow-up 0.8s ease-in-out backwards;
+      animation-delay: inherit;
+
+      .moodbar-bar-score {
+        font-family: Nunito;
+        font-weight: 700;
+        font-size: 2.0rem;
+        padding-top: 0.8rem;
+        color: $color-while;
+        transition: inherit;
+        animation: fade-in 0.8s ease-in-out backwards;
+        animation-delay: inherit;
+      }
+    }
+
+    .moodbar-bar-icon {
+      position: absolute;
+      padding: 0.4rem;
+      width: 100%;
+      animation: zoom-out 0.2s ease-in-out backwards;
+      animation-delay: inherit;
+    }
+  }
+
+  .moodbar-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-top: 1.2rem;
+    border-radius: 0.8rem;
+    transition: inherit;
+    animation: zoom-out 0.2s ease-in-out backwards;
+    animation-delay: inherit;
+
+    .moodbar-day-text {
+      font-size: 1.8rem;
+      transition: inherit;
+    }
+  }
+
+  &.selected {
+    .moodbar-bar {
+      .moodbar-bar-progress {
+        transform: scaleX(1.13) scaleY(1.03);
+        // transform: scale(1.13);
+        box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+        outline: 0.3rem solid;
+
+        .moodbar-bar-score {
+          font-size: 2.4rem;
+        }
+      }
+
+      .moodbar-bar-icon {}
+    }
+
+    .moodbar-day {
+      box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+
+      .moodbar-day-text {}
+    }
+  }
+
+  &.today {
+    .moodbar-bar {
+      .moodbar-bar-progress {
+
+        .moodbar-bar-score {}
+      }
+
+      .moodbar-bar-icon {}
+    }
+
+    .moodbar-day {
+      box-shadow: none;
+      background-color: #2D2F33;
+      color: $color-while;
+
+      .moodbar-day-text {}
+    }
+  }
+}
+
+.moodchart {
+  position: relative;
+  height: 32.5rem;
+  margin-bottom: 1.8rem;
+
+  .moodchart-background {
+    position: absolute;
+    top: 0;
+    height: 14.8rem;
+    width: 100%;
+    border-top: 0.2rem solid #F2F2F2;
+    border-bottom: 0.2rem solid #F2F2F2;
+    z-index: -1;
+  }
+
+  .moodchart-bars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+  }
+}

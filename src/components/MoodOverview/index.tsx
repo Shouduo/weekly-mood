@@ -7,13 +7,13 @@ import './index.scss';
 // import IconArrowLeft from '../../assets/svg/icon_arrow_left.svg';
 import { MoodType } from '@/utils/constants';
 
-interface Props {
+interface MoodOverviewProps {
   userName: string;
   userAvatar: string;
   moodList: MoodType[];
 }
 
-const MoodOverview = ({userName, userAvatar, moodList} : Props) => {
+const MoodOverview = ({userName, userAvatar, moodList} : MoodOverviewProps) => {
   const [averageScore, setAverateScore] = useState(0);
   
   useEffect(() => {
