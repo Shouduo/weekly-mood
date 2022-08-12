@@ -1,0 +1,49 @@
+@import '../../App.scss';
+
+.moodoverview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3.4rem;
+  animation: fade-in 0.8s ease-in-out forwards;
+
+  .moodoverview-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+
+    .moodoverview-user-avatar {
+      border-radius: 50%;
+      width: 3.6rem;
+    }
+
+    .moodoverview-user-name {
+      margin-left: 1.2rem;
+      font-size: 2rem;
+      // line-height: 2.8rem;
+      text-align: center;
+    }
+  }
+
+  .moodoverview-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.4rem;
+
+    .moodoverview-info-score {
+      font-family: Nunito;
+      font-size: 7.2rem;
+      font-weight: 800;
+    }
+
+    .moodoverview-info-caption {
+      font-size: 1.8rem;
+      color: #929292;
+    }
+  }
+}
