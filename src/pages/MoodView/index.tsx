@@ -13,7 +13,6 @@ const MoodView = () => {
     axios('/mood').then(({status, data}) => {
       if (status === 200 && data.code === 0) {
         setMoodList(data.payload.list);
-        // console.log(data.payload.list);
       }
     }).catch((err) => {
       console.log(err);

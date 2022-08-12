@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
 import './index.scss';
 import { WEEKDAYS, MOOD_STATUS, MoodType } from '@/utils/constants';
 import { getMoodStatus } from '@/utils/index';
-// import IconMoodBad from '../../assets/svg/icon_mood_bad.svg';
 
 interface MoodBarProps {
   index: number;
@@ -41,7 +39,6 @@ const MoodBar = ({index, timestamp, score, isSelected, onSelect} : MoodBarProps)
             background: isSelected 
               ? `linear-gradient(180deg, ${MOOD_STATUS[mood].colors[1]} 45%, ${MOOD_STATUS[mood].colors[0]} 100%)`
               : `linear-gradient(180deg, ${MOOD_STATUS[mood].colors[2]} 45%, ${MOOD_STATUS[mood].colors[2]} 100%)`,
-            // background: MOOD_STATUS[mood].color,
             outlineColor: `${MOOD_STATUS[mood].colors[2]}33`,
             height: `calc(${score/100} * (100% - 8.7rem) + 8.7rem)`
           }}

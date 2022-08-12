@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
 import './index.scss';
-// import { MOOD_STATUS } from '@/utils/constants';
-// import IconMoodBad from '../../assets/svg/icon_mood_bad.svg';
-// import MoodChart from '../MoodChart';
-// import IconArrowLeft from '../../assets/svg/icon_arrow_left.svg';
 import { MoodType } from '@/utils/constants';
 
 interface MoodOverviewProps {
@@ -40,9 +35,4 @@ const MoodOverview = ({userName, userAvatar, moodList} : MoodOverviewProps) => {
   );
 }
 
-// MoodOverview.defaultProps = {
-//   userName: USER_TEMPLATE.name,
-//   userAvatar: USER_TEMPLATE.avatar,
-//   moodList: []
-// }
 export default MoodOverview;

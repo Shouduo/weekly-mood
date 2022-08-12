@@ -29,7 +29,6 @@
       background-color: $color-gray-1;
       border-radius: 999px;
       transform-origin: 50% calc(100% - 12rem);
-      // transition: all ease-in-out 0.2s;
       transition: inherit;
       animation: fade-in 0.2s ease-in-out backwards, grow-up 0.8s ease-in-out backwards;
       animation-delay: inherit;
@@ -78,7 +77,6 @@
     .moodbar-bar {
       .moodbar-bar-progress {
         transform: scaleX(1.13) scaleY(1.03);
-        // transform: scale(1.13);
         box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
         outline: 0.3rem solid;
 
@@ -86,33 +84,18 @@
           font-size: 2.4rem;
         }
       }
-
-      .moodbar-bar-icon {}
     }
 
     .moodbar-day {
       box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
-
-      .moodbar-day-text {}
     }
   }
 
   &.today {
-    .moodbar-bar {
-      .moodbar-bar-progress {
-
-        .moodbar-bar-score {}
-      }
-
-      .moodbar-bar-icon {}
-    }
-
     .moodbar-day {
       box-shadow: none;
       background-color: $color-neutral-3;
       color: $color-while;
-
-      .moodbar-day-text {}
     }
   }
 }
