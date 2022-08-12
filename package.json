@@ -145,7 +145,6 @@
   "devDependencies": {
     "@types/mockjs": "^1.0.6",
     "mockjs": "^1.1.0",
-    "sass": "^1.54.4",
-    "typescript-plugin-css-modules": "^3.4.0"
+    "sass": "^1.54.4"
   }
 }
