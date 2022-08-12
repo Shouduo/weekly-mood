@@ -1,0 +1,42 @@
+.moodview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 4.8rem;
+
+  .moodview-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3.6rem;
+
+    .moodview-header-back {
+      position: absolute;
+      width: 3.6rem;
+      left: 1.2rem;
+    }
+
+    .moodview-header-title {
+      // line-height: 2.8rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+  }
+
+  .moodview-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 1.8rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    // box-shadow: 0 -1.6rem 1.6rem -0.8rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -0.7rem 1.6rem rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 2.4rem;
+    border-top-right-radius: 2.4rem;
+  }
+}
