@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6f9392e6.css",
+    "main.js": "/static/js/main.289b0aa9.js",
+    "static/js/787.c0b668ee.chunk.js": "/static/js/787.c0b668ee.chunk.js",
+    "static/media/Nunito-Regular.ttf": "/static/media/Nunito-Regular.f8c1d028eab805947023.ttf",
+    "static/media/avatar_li_qiang.png": "/static/media/avatar_li_qiang.023739297735926cc56a.png",
+    "static/media/icon_mood_unknown.svg": "/static/media/icon_mood_unknown.1aa6fc39fa184499575e0ef197a40136.svg",
+    "static/media/icon_mood_excellent.svg": "/static/media/icon_mood_excellent.6a9100a8d53ea1edfd9dccd75b429fdc.svg",
+    "index.html": "/index.html",
+    "static/media/icon_mood_bad.svg": "/static/media/icon_mood_bad.62cf1e6d96c66602b4943d42570a2c62.svg",
+    "static/media/icon_mood_good.svg": "/static/media/icon_mood_good.e33758713361f79ee450df4f1290ae22.svg",
+    "static/media/icon_arrow_left.svg": "/static/media/icon_arrow_left.052da9c3cd44ce639c61fdbc2327cd22.svg",
+    "main.6f9392e6.css.map": "/static/css/main.6f9392e6.css.map",
+    "main.289b0aa9.js.map": "/static/js/main.289b0aa9.js.map",
+    "787.c0b668ee.chunk.js.map": "/static/js/787.c0b668ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f9392e6.css",
+    "static/js/main.289b0aa9.js"
+  ]
+}
